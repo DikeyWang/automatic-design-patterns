@@ -394,7 +394,3 @@ public class Boy {
 - process(Set<? extends TypeElement> annotations, RoundEnvironment env): 这相当于每个处理器的主函数main()。 在这里写扫描、评估和处理注解的代码，以及生成Java文件。输入参数RoundEnviroment，可以让查询出包含特定注解的被注解元素。
 - getSupportedAnnotationTypes(): 这里必须指定，这个注解处理器是注册给哪个注解的。注意，它的返回值是一个字符串的集合，包含本处理器想要处理的注解类型的合法全称。换句话说，在这里定义你的注解处理器注册到哪些注解上。
 - getSupportedSourceVersion(): 用来指定你使用的Java版本。通常这里返回SourceVersion.latestSupported()。然而，如果有足够的理由只支持Java 6的话，也可以返回SourceVersion.RELEASE_6。推荐使用前者。
-
-# 总结
-
-项目地址
